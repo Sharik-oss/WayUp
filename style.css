@@ -1,0 +1,228 @@
+body {
+	font-family: open sans, sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	font-family: 'Monserrat', sans-serif;
+	font-weight: 900;
+}
+p {
+	line-height: 1.66em;
+}
+
+.animated {
+	opacity: 0;
+}
+
+.container {
+	width: 1171px;
+	margin: 0 auto;
+}
+.header {
+	background: rgba(77,189,254,1);
+	background: -moz-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(77,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: linear-gradient(135deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfe', endColorstr='#3790d9', GradientType=1 );
+	padding-top: 100px;
+	padding-bottom: 142px;
+	color: white;
+}
+.wrapper {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+.offer {
+	width: 600px;
+	margin-top: 178px;
+	font-size: 36px;
+}
+.offer span {
+	font-size: 60px;
+}
+.intro {
+	margin-bottom: 45px;
+	margin-top: 30px;
+	width: 396px;
+	font-family: open sans;
+}
+.btn {
+	font-family: 'Monserrat', sans-serif;
+	font-weight: bold;
+	background: #ffd429;
+	color: #2e2a1b;
+	display: block;
+	width: 220px;
+	height: 55px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+.learn {
+	padding-top: 112px;
+	padding-bottom: 120px;
+	align-items: center;
+}
+.btn:hover {
+	background-color: #f2c100;
+}
+
+.travel {
+	margin-top: 66px;
+}
+.section-title {
+	font-size: 30px;
+	text-align: center;
+}
+.futures {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.future-title {
+	font-size: 19px;
+	padding-top: 100px;
+	text-align: center;
+}
+.future-text {
+	font-family: Ubuntu;
+	margin-top: 10px;
+	text-align: center;
+}
+.future {
+	width: 272px;
+	height: 198px;
+	background: url('../img/icon1.jpg') no-repeat center top;
+	padding-top: 0;
+}
+.future-bright {
+	background: url('../img/icon2.jpg') no-repeat center top;
+}
+.future-value {
+	background: url('../img/icon3.jpg') no-repeat center top;
+}
+.ticket {
+	background-color: #ecf3f8;
+	padding-top: 102px;
+	padding-bottom: 100px;
+	text-align: center;
+	display: flex;
+	display: block;
+}
+.red {
+	color: red;
+}
+.input {
+	width: 341px;
+	height: 47px;
+	border: 1px solid #bbbbbb;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-size: 15px;
+	font-family: open sans, sans-serif;
+	padding-left: 24px;
+	padding-top: 5px;
+	padding-bottom: 8px;
+}
+.btn-form {
+	border: 0;
+	cursor: pointer;
+	display: inline;
+	margin-top: 10px;
+	width: 341px;
+}
+.form {
+	margin-top: 57px;
+}
+.footer {
+	padding: 63px 0;
+	background: #164d7a;
+}
+.credits {
+	font-size: 14px;
+	color: #f4f6f8;
+	text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}	
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: 100%;
+	}
+	.travel {
+		display: block;
+	    width: 100%;
+	    margin-top: 66px auto 0;
+
+	}
+	.futures {
+		flex-direction: column;
+		width: auto;
+		margin-bottom: 30px;
+		margin: auto;
+	}
+}
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+		
+	}
+	.futures {
+	    align-items: center;
+	}
+	.travel {
+		display: block;
+	    width: 100%;
+	    margin-top: 66px auto 0;
+
+	}
+}
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}	
+	.futures {
+	    align-items: center;
+	}
+	.travel {
+		display: block;
+	    width: 100%;
+	    margin-top: 66px auto 0;
+
+	}
+}
+@media screen and (max-width: 550px) {
+	.container {
+		width: 100%;
+	}	
+	.futures {
+	    align-items: center;
+	}
+	.travel {
+		display: block;
+	    width: 100%;
+	    margin-top: 66px auto 0;
+
+	}
+}
