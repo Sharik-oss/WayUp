@@ -1,33 +1,23 @@
-var btn = document.getElementById('btn');
-
-btn.onclick = function (e) {
-	e.preventDefault();
-	var text = document.querySelector('p.intro');
-	text.classList.add('red');
-	var img = document.querySelector('.travel');
-	img.style.display = 'none';
-	document.querySelector('.future-value').style.marginLeft = "50px";
-}
-
 $(function () {
-	$(window).scroll(function() {
-	    $('#learn .section-title').each(function(){
-	        var imagePos = $(this).offset().top;
+    function checkScrollAnimations() {
+        var topOfWindow = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        $('#learn .section-title').each(function () {
+            var imagePos = $(this).offset().top;
+            if (imagePos < topOfWindow + windowHeight - 100) {
+                $(this).addClass("fadeInRight");
+            }
+        });
 
-	        var topOfWindow = $(window).scrollTop();
-	        if (imagePos < topOfWindow+650) {
-	            $(this).addClass("fadeInRight");
-	        }
-	    });
-	});
-	$(window).scroll(function() {
-	    $('.future-value').each(function(){
-	        var imagePos = $(this).offset().top;
+        $('.future.animated').each(function () {
+            var imagePos = $(this).offset().top;
+            if (imagePos < topOfWindow + windowHeight - 100) {
+                $(this).addClass("fadeInUp");
+            }
+        });
+    }
 
-	        var topOfWindow = $(window).scrollTop();
-	        if (imagePos < topOfWindow+650) {
-	            $(this).addClass("fadeInUp");
-	        }
-	    });
-	});
-})
+    $(window).on('scroll', checkScrollAnimations);
+
+    checkScrollAnimations();
+});
